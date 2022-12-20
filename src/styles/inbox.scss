@@ -1,0 +1,171 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+.inbox__list__header {
+  //   background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0em;
+  position: sticky;
+  z-index: 99999;
+  top: 0;
+  background-color: #f0f4ff;
+}
+.inbox__list__header__heading {
+  display: flex;
+  font-size: 25px;
+  font-weight: 600;
+}
+.inbox__list__header__remainigs {
+  background-color: $secondary;
+  color: $white;
+  border-radius: 30px;
+  height: 30px;
+  padding: 1em 2em;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.inbox__list__mails__mail {
+  background-color: $white;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 1em 2em;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+}
+
+.inbox__list__mails__mail:hover .inbox__list__mails__mail__info__heading__name {
+  color: $white;
+}
+.inbox__list__mails__mail__active {
+  background-color: $white;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 1em 2em;
+  width: 100%;
+  z-index: 999;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+}
+.inbox__list__mails__mail__info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.3em 0;
+}
+.inbox__list__mails__mail__info__heading {
+  display: flex;
+  align-items: center;
+}
+.inbox__list__mails__mail__info__time {
+  font-size: 14px;
+  font-weight: 500;
+}
+.inbox__list__mails__mail__info__heading__name {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  font-weight: 600;
+  margin: 0 1em 0 0;
+}
+.inbox__list__mails__mail__info__heading__transctionid {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #b6b6b6;
+}
+.inbox__list__mails__mail__text {
+  color: #676767;
+  font-size: 12px;
+  margin-top: 0.3em;
+}
+.inbox__list__mails__mail:hover {
+  background-color: #171321;
+  color: $white;
+  cursor: pointer;
+}
+.inbox__list__bottom__entry {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+.inbox__list__button {
+  background-color: $secondary;
+  padding: 0.6em 3em;
+  border: 1px solid $secondary;
+  color: $white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.inbox__list__button:hover {
+  background-color: #171321;
+  border: 1px solid #171321;
+  transition: 300ms ease-in-out;
+}
+.inbox__list__mails {
+  z-index: 999;
+}
+.container__main__content__listing__message {
+  padding: 2em;
+  margin-top: -1.5em;
+  background-color: rgba(195, 196, 198, 0.3);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 13px;
+  min-height: 150px;
+  color: #676767;
+}
+@media (max-width: 550px) {
+  .inbox__list__header__heading {
+    font-size: 26px;
+  }
+  .inbox__list__header__remainigs {
+    font-size: 12px;
+  }
+  .inbox__list__mails__mail {
+    padding: 1em 2em;
+  }
+
+  .inbox__list__mails__mail__info__time {
+    font-size: 14px;
+  }
+  .inbox__list__mails__mail__info__heading__name {
+    font-size: 16px;
+  }
+  .inbox__list__mails__mail__info__heading__transctionid {
+    font-size: 10px;
+  }
+  .inbox__list__mails__mail__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 465px) {
+  .inbox__list__header__heading {
+    font-size: 24px;
+  }
+  .inbox__list__header__remainigs {
+    font-size: 10px;
+  }
+  .inbox__list__mails__mail {
+    padding: 1em 1.5em;
+  }
+  .inbox__list__mails__mail__info__heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .inbox__list__mails__mail__info__heading__transctionid {
+    font-size: 10px;
+  }
+  .inbox__list__mails__mail__text {
+    font-size: 12px;
+  }
+}

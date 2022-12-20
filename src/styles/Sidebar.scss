@@ -1,0 +1,111 @@
+.container__sidebar__entry {
+  width: 100%;
+}
+.container__sidebar__entry__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  height: 70px;
+  margin-top: 2em;
+  background-color: rgba(225, 73, 130, 0.3);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  color: rgb(225, 73, 130);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.container__sidebar__entry__btn:hover {
+  transition: 300ms ease-in-out;
+  background-color: #8563dd;
+  color: #ffff;
+}
+.container__sidebar__content {
+  margin-top: 2em;
+  height: calc(100% - 45px - 2em);
+  padding: 0em 1.5em;
+  width: 100%;
+  overflow-y: auto;
+}
+.container__sidebar__data {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1em;
+}
+.container__sidebar__content__inbox__entry {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container__sidebar__content__inbox__entry .active {
+  background-color: #8563dd;
+  color: #ffff;
+  transition: 300ms ease-in-out;
+}
+.container__sidebar__content__inbox__entry__btn {
+  width: 100%;
+  margin-bottom: 0.5em;
+  height: 40px;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #f4f4f4;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.container__sidebar__content__inbox__entry__btn:hover {
+  background-color: #8563dd;
+  color: #ffff;
+  transition: 300ms ease-in-out;
+}
+.container__sidebar__content__inbox__entry__log__out {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container__sidebar__content__inbox__entry__log__out__btn:last-child {
+  border: 1px solid rgb(72, 72, 72);
+  font-weight: 400;
+  height: 40px;
+  text-align: start;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  padding: 0em 0em;
+  padding-left: 1.5em;
+  text-decoration: none;
+}
+.container__sidebar__content__inbox__entry__log__out__btn {
+  width: 100%;
+  height: 40px;
+  background-color: #f4f4f4;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__sidebar__content__inbox__entry__log__out__btn:hover {
+  background-color: #8563dd;
+  border-color: #8563dd;
+  color: #ffff;
+  transition: 300ms ease-in-out;
+}
+@media (max-width: 1360px) {
+}

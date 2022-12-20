@@ -1,0 +1,163 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+
+.sign__up__overlay__card {
+  width: calc(100% - 1em);
+  max-width: 800px;
+  background: linear-gradient(
+    236deg,
+    rgba(225, 73, 130, 1) 38%,
+    rgba(133, 99, 221, 1) 87%
+  );
+  padding: 3em 6em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+.sign__up__overlay__card__heading {
+  font-size: 15px;
+  color: $white;
+  text-align: center;
+}
+.sign__up__overlay__card__heading span {
+  font-weight: 600;
+}
+.sign__up__overlay__card__sub__heading {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: $white;
+}
+
+.sign__up__overlay__card__data__entry {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign__up__verify__overlay__card__data__entry {
+  width: 100%;
+  max-width: 500px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign__up__overlay__card__data__entry__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign__up__overlay__card__data__entry__input {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.sign__up__overlay__card__data__entry__input
+  .sign__in__overlay__card__data__entry__input:first-child {
+  margin-right: 0.5em;
+}
+.sign__in__overlay__card__data__entry__input__error {
+  position: absolute;
+  bottom: -0px;
+  font-size: 13px;
+  margin-left: 2em;
+  color: $white;
+}
+
+.sign__up__overlay__card__data__entry__scanning__heading {
+  width: 100%;
+  color: $white;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+.sign__up__overlay__card__data__entry__scanning__input {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.sign__up__overlay__card__data__entry__scanning__input__entry {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $white;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  padding: 0.7em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry:hover {
+  background-color: $white;
+  transition: 300ms ease-in-out;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry svg {
+  color: $white;
+}
+
+.sign__up__overlay__card__data__entry__scanning__input__entry:hover.sign__up__overlay__card__data__entry__scanning__input__entry
+  svg {
+  color: $primary;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry__active {
+  background-color: white;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry__active svg {
+  color: $primary;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry__signin__btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry__signin__btn
+  button {
+  width: 250px;
+  height: 38px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid $white;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 1em 0em;
+}
+.sign__up__overlay__card__data__entry__scanning__input__entry__signin__btn
+  button:hover {
+  background-color: transparent;
+  color: $white;
+  transition: 300ms ease-in-out;
+}
+@media (max-width: 800px) {
+  .sign__up__overlay__card {
+    padding: 3em 2em;
+  }
+}
+@media (max-width: 500px) {
+  .sign__up__overlay__card {
+    padding: 2em 2em;
+  }
+  .sign__up__overlay__card__data__entry__input {
+    flex-direction: column;
+  }
+  .sign__up__overlay__card__data__entry__input
+    .sign__in__overlay__card__data__entry__input:first-child {
+    margin-right: 0em;
+  }
+}

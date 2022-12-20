@@ -1,0 +1,253 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+.sign__in {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/homepagebanner.png");
+}
+.sign__in__overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.sign__in__overlay__header__entry__svg {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: $primary;
+  margin-bottom: 1em;
+}
+.sign__in__overlay__header__entry__svg svg {
+  width: 25px;
+  height: 27px;
+}
+.sign__in__overlay__header__entry__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+}
+.sign__in__overlay__header__entry__detail__heading {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.sign__in__overlay__header__entry__detail__subheading {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sign__in__overlay__card {
+  width: calc(100% - 1em);
+  max-width: 500px;
+  background: linear-gradient(
+    236deg,
+    rgba(225, 73, 130, 1) 38%,
+    rgba(133, 99, 221, 1) 87%
+  );
+  padding: 3em 2em;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  justify-content: space-between;
+}
+
+.sign__in__overlay__card__heading {
+  font-size: 15px;
+  color: $white;
+  text-align: center;
+}
+.sign__in__overlay__card__heading span {
+  font-weight: 600;
+}
+.sign__in__overlay__card__sub__heading {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.7em;
+}
+.sign__in__overlay__card__data__entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign__in__overlay__card__data__entry__input {
+  width: 100%;
+  position: relative;
+}
+.sign__in__overlay__card__data__entry__input__error {
+  position: absolute;
+  bottom: -0px;
+  font-size: 13px;
+  margin-left: 2em;
+  color: $white;
+}
+.sign__in__overlay__card__data__entry__input input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 1.5em;
+  padding: 0em 2em;
+  border: 0.5px solid transparent;
+  color: $white;
+  font-size: 13px;
+  border-radius: 50px;
+  outline: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.sign__in__overlay__card__data__entry__input input:focus {
+  outline-color: $white;
+  transition: 300ms ease-in-out;
+}
+.sign__in__overlay__card__data__entry__input input:hover {
+  border-color: $white;
+  transition: 300ms ease-in-out;
+}
+.sign__in__overlay__card__data__entry__input input::placeholder {
+  color: rgba(245, 244, 244, 0.6);
+  opacity: 1; /* Firefox */
+}
+
+.sign__in__overlay__card__data__entry__input input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $white;
+}
+
+.sign__in__overlay__card__data__entry__input input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $white;
+}
+.sign__in__overlay__card__data__entry__input__forgot__password {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+}
+.sign__in__overlay__card__data__entry__input__forgot__password button {
+  padding: 0px;
+  margin: 0px;
+  background-color: transparent;
+  border: none;
+  color: $white;
+  margin-top: -1em;
+  z-index: 999;
+  cursor: pointer;
+}
+.sign__in__overlay__card__data__entry__input__forgot__password button:hover {
+  text-decoration: underline;
+  transition: 300ms ease-in-out;
+}
+.sign__in__overlay__card__data__entry__scanning__heading {
+  width: 100%;
+  max-width: 250px;
+  color: $white;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 1em 0em;
+}
+.sign__in__overlay__card__data__entry__scanning__input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $white;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+  padding: 0.7em;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry:hover {
+  background-color: $white;
+  transition: 300ms ease-in-out;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry svg {
+  color: $white;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__active {
+  background-color: white;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__active svg {
+  color: $primary;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry:hover.sign__in__overlay__card__data__entry__scanning__input__entry
+  svg {
+  color: $primary;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__signin__click {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__signin__btn {
+  width: 250px;
+  height: 40px;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid $white;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  align-items: center;
+  text-decoration: none;
+  background-color: $white;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__signin__btn:hover {
+  background-color: transparent;
+  color: $white;
+  transition: 300ms ease-in-out;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 14px;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__bottom__btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: $white;
+  padding: 0em;
+  margin: 0em;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign__in__overlay__card__data__entry__scanning__input__entry__bottom__btn:hover {
+  transition: 300ms ease-in-out;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .sign__in__overlay__card {
+    padding: 2em 2em;
+  }
+}

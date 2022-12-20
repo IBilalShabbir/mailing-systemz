@@ -1,0 +1,259 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+
+.mailhome {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mailhome__container {
+  width: 100%;
+  height: 100%;
+  padding: 1em 0em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mailhome__container__box {
+  width: calc(100% - 2em);
+  max-width: 1440px;
+  height: 100%;
+  background-color: $white;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 2em 2em;
+}
+.mailhome__container__box__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mailhome__container__box__description__img {
+  width: 100%;
+}
+.mailhome__container__box__header__buttons {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+}
+.mailhome__container__box__header__buttons__pricing button {
+  height: 40px;
+  padding: 0 2.5em;
+  font-size: 14px;
+  border: 1px solid $primary;
+  background: transparent;
+  border-radius: 50px;
+  color: $primary;
+  cursor: pointer;
+}
+.mailhome__container__box__header__buttons__pricing button:hover {
+  background-color: $primary;
+  color: $white;
+  transition: 300ms ease-in-out;
+}
+.mailhome__container__box__header__buttons__account {
+  height: 40px;
+  padding: 0 1em;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid $primary;
+  background: $primary;
+  border-radius: 50px;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+  fill: $white;
+}
+.mailhome__container__box__header__buttons__account:hover {
+  background-color: $white;
+  color: $primary;
+}
+.mailhome__container__box__header__buttons__account__avatar {
+  display: flex;
+  align-items: center;
+}
+.mailhome__container__box__header__buttons__account__name {
+  padding-left: 1em;
+  text-decoration: none;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mailhome__container__box__header__buttons__account:hover
+  .mailhome__container__box__header__buttons__account__name {
+  color: $primary;
+}
+.mailhome__container__box__description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2em;
+  text-align: center;
+}
+.mailhome__container__box__description__heading {
+  font-size: 35px;
+  font-weight: bolder;
+  padding: 0.5em 0 0.5em 0;
+}
+.mailhome__container__box__description__text {
+  width: 100%;
+  max-width: 700px;
+  font-size: 13px;
+  color: #676767;
+}
+.mailhome__container__box__description__buttons {
+  display: flex;
+  margin-top: 2em;
+}
+.mailhome__container__box__description__buttons__entermail {
+  background-color: $secondary;
+  color: $white;
+  cursor: pointer;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 0 3em;
+  border: 1px solid $secondary;
+  margin-right: 1em;
+  font-weight: 500;
+}
+.mailhome__container__box__description__buttons__entermail:hover {
+  background-color: $white;
+  color: $secondary;
+}
+.mailhome__container__box__description__buttons__logout {
+  cursor: pointer;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 0 3em;
+  border: 1px solid $secondary;
+  font-weight: 500;
+  background-color: $white;
+  color: $secondary;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mailhome__container__box__description__buttons__logout:hover {
+  background-color: $secondary;
+  color: $white;
+}
+.mailhome__container__box__header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.mailhome__container__box__header__logo img {
+  width: 100%;
+  max-width: 200px;
+}
+.mailhome__container__box__description__img img {
+  width: 200px;
+}
+
+@media (max-width: 920px) {
+  .mailhome__container__box__description__heading {
+    font-size: 25px;
+  }
+  .mailhome__container__box__description__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 880px) {
+  .mailhome__container__box__header__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    width: 100%;
+  }
+  .mailhome__container__box__description__img img {
+    width: 170px;
+  }
+  .mailhome__container__box {
+    max-height: 600px;
+  }
+  .mailhome__container__box__header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .mailhome__container__box__header__buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mailhome__container__box__header__buttons__pricing button {
+    margin-bottom: 0em;
+  }
+
+  .mailhome__container {
+    width: calc(100% - 1.5em);
+  }
+}
+@media (max-width: 475px) {
+  .mailhome__container__box__header__logo img {
+    width: 200px;
+  }
+  .mailhome__container__box__description__img img {
+    width: 150px;
+  }
+  .mailhome__container__box__header__buttons__pricing {
+    margin-bottom: 1em;
+  }
+  .mailhome__container__box__header__buttons__pricing button {
+    height: 35px;
+    padding: 0 3em;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .mailhome__container__box {
+    max-height: 600px;
+  }
+  .mailhome__container__box__description__buttons {
+    flex-direction: column;
+  }
+  .mailhome__container__box__header__buttons__account {
+    height: 35px;
+    padding: 0 1em;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .mailhome__container__box__header__buttons__account__avatar {
+    display: flex;
+    align-items: center;
+  }
+  .mailhome__container__box__header__buttons__account__name {
+    padding-left: 1em;
+  }
+  .mailhome__container__box__description__heading {
+    font-size: 20px;
+  }
+  .mailhome__container__box__description__text {
+    font-size: 12px;
+  }
+  .mailhome__container__box__description__buttons__entermail {
+    height: 35px;
+
+    padding: 0 3em;
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
+  .mailhome__container__box__description {
+    margin-top: -3em;
+  }
+  .mailhome__container__box__description__buttons__logout {
+    height: 35px;
+    padding: 0 3em;
+  }
+}

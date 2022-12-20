@@ -1,0 +1,10 @@
+export { default as react } from "./react.svg";
+export { default as homepagebanner } from "./homepagebanner.png";
+export { default as homebannerright } from "./homebannerright.png";
+export { default as blockchain } from "./blockchain.png";
+export { default as tradingbanner } from "./tradingbanner.png";
+export { default as automizerhomepage } from "./automizerhomepage.png";
+export { default as errorimg } from "./errorimg.png";
+export { default as logo } from "./logo.png";
+export { default as mailinglogo } from "./mailinglogo.png";
+export { default as mail } from "./mail.svg";

@@ -1,0 +1,198 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+.footer {
+  width: 100%;
+  background-color: rgb(18, 6, 44);
+  position: relative;
+}
+.footer__bottom__copy__right {
+  text-align: center;
+  padding: 1em 0em;
+  color: $white;
+  font-size: 14px;
+  background-color: #0d0421;
+}
+.footer__content {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0em auto;
+  padding: 5em 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.footer__content__col__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $white;
+  font-size: 22px;
+  font-weight: 700;
+  width: 100%;
+  height: 50px;
+}
+.footer__content__col__logo svg {
+  margin-right: 0.5em;
+  width: 40px;
+  color: $white;
+}
+.footer__content__col {
+  flex: 1;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.footer__content__col:first-child {
+  min-width: 30%;
+}
+.footer__content__col:last-child {
+  margin-right: 0em;
+}
+.footer__content__col__info {
+  font-size: 14px;
+  color: $white;
+  margin: 2em 0em;
+  width: 100%;
+  max-width: 300px;
+}
+.footer__content__col__socials {
+  display: flex;
+  align-items: center;
+}
+.footer__content__col__socials__link {
+  margin-right: 2em;
+  color: white;
+  border: 1px solid $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.footer__content__col__socials__link:hover {
+  border-color: #6a2dec;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__socials__link:hover * {
+  color: #6a2dec;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__link__email__input {
+  width: 100%;
+}
+.footer__content__col__link__email__input input {
+  width: 100%;
+  max-width: 250px;
+  height: 40px;
+  padding: 0em 1em;
+  border-radius: 8px;
+  border: 1px solid $white;
+  font-size: 14px;
+  outline: 0.5px solid transparent;
+}
+.footer__content__col__link__email__input input:hover {
+  transition: 300ms ease-in-out;
+  border-color: #6a2dec;
+}
+.footer__content__col__link__email__input input:focus {
+  transition: 300ms ease-in-out;
+  border-color: #6a2dec;
+  outline-color: #6a2dec;
+}
+.footer__content__col__link__email__btn {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.footer__content__col__link__email__btn button {
+  padding: 0em 2em;
+  background-color: $secondary;
+  border: 1px solid $secondary;
+  border-radius: 50px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $white;
+  cursor: pointer;
+}
+
+.footer__content__col__link__email__btn button:hover {
+  background: $white;
+  color: $secondary;
+  transition: 300ms ease-in-out;
+}
+
+.footer__content__col__socials__link svg {
+  width: 25px;
+  height: 25px;
+}
+.footer__content__col__socials__link:hover {
+  transition: 300ms ease-in-out;
+  color: $white;
+}
+.footer__content__col__heading {
+  font-size: 26px;
+  font-weight: bold;
+  color: $white;
+  margin-bottom: 1em;
+}
+.footer__content__col__link {
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 0.7em;
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__link:hover {
+  transition: 300ms ease-in-out;
+  color: $secondary;
+}
+.footer__content__col__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+.footer__content__col__row__link {
+  font-size: 14px;
+  color: $white;
+  margin-bottom: 0.7em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.footer__content__col__row__link:hover {
+  transition: 300ms ease-in-out;
+  color: #6a2dec;
+}
+.footer__content__col__row {
+  font-size: 14px;
+  color: $white;
+  cursor: pointer;
+}
+.footer__content__col__row:hover {
+  color: #6a2dec;
+  transition: 300ms ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  .footer__content__col {
+    min-width: 40%;
+    max-width: 40%;
+    margin-right: 0em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__content__col {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .footer__content__col__info {
+    max-width: 450px;
+  }
+}

@@ -1,0 +1,428 @@
+$white: #ffff;
+$primary: #e14982;
+$secondary: #8563dd;
+
+.homepage {
+  width: 100%;
+  height: 100vh;
+  max-height: 1000px;
+  background: url("../assets/homepagebanner.png"), no-repeat;
+  background-size: cover;
+  padding: 5em 0em;
+  padding-top: 7em;
+  display: flex;
+  align-items: center;
+}
+
+.homepage___wrapper {
+  height: fit-content;
+  width: calc(100% - 3.5em);
+  max-width: 1340px;
+  margin: 0 auto;
+  height: fit-content;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    236deg,
+    rgba(225, 73, 130, 1) 38%,
+    rgba(133, 99, 221, 1) 87%
+  );
+  padding: 4em 4em;
+  border-radius: 20px;
+}
+.homepage___wrapper__overlay {
+  display: flex;
+  align-items: center;
+}
+.homepage___wrapper__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 300px;
+}
+.homepage___wrapper__left__heading {
+  font-size: 35px;
+  font-weight: 600;
+  color: $white;
+  word-break: normal;
+  max-width: 350px;
+  line-height: 40px;
+}
+.homepage___wrapper__left__text {
+  color: $white;
+  font-size: 15px;
+  text-align: start;
+  margin: 2em 0em;
+  margin-bottom: 3em;
+}
+.homepage___wrapper__left__get__started {
+  background: $white;
+  width: fit-content;
+  border: 1px solid $white;
+  padding: 0.5em 2em;
+  height: 40px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage___wrapper__left__get__started:hover {
+  background: $secondary;
+  transition: 300ms ease-in-out;
+  color: $white;
+}
+.homepage___wrapper__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepage___wrapper__right img {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  min-width: 100%;
+  object-fit: contain;
+}
+.homepage__trading {
+  width: 100%;
+  padding: 5em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
+.homepage__trading__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0em 2em;
+}
+.homepage__trading__container__left {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homepage__trading__container__left__heading {
+  font-size: 35px;
+  font-weight: bold;
+}
+.homepage__trading__container__left__text {
+  margin: 2em 0em;
+  font-size: 15px;
+  padding-right: 2em;
+  color: #676767;
+}
+.homepage__trading__container__left__btn {
+  width: fit-content;
+}
+.homepage__trading__container__left__btn__get__started {
+  background: $secondary;
+  border: 1px solid $secondary;
+  padding: 0.6em 2em;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  border-radius: 50px;
+}
+.homepage__trading__container__left__btn__get__started:hover {
+  background-color: transparent;
+  color: $secondary;
+  transition: 300ms ease-in-out;
+}
+.homepage__trading__container__right {
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.homepage__trading__container__right__card__col {
+  width: fit-content;
+  height: 100%;
+}
+.homepage__trading__container__right__entry:first-child {
+  margin-bottom: 1em !important;
+}
+.homepage__trading__container__right__entry {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ecedf2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 2em;
+  box-shadow: 0 10px 30px #0000000a;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #242424;
+  margin: 0.5em;
+  cursor: pointer;
+}
+.homepage__trading__container__right__entry:hover {
+  background: linear-gradient(
+    236deg,
+    rgba(225, 73, 130, 1) 38%,
+    rgba(133, 99, 221, 1) 87%
+  );
+  color: $white;
+}
+.homepage__trading__container__right__entry:hover * {
+  color: $white;
+}
+.homepage__trading__container__right__entry__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  padding: 0.5em;
+  background-color: #d8d1e9;
+}
+
+.homepage__trading__container__right__entry__heading {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 20px;
+}
+
+.homepage__trading__container__right__entry__text {
+  font-size: 14px;
+  color: #676767;
+}
+.most__advanced__crypto {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.most__advanced__crypto__img {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  min-height: 400px;
+  object-fit: cover;
+}
+.most__advanced__crypto__overlay {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.most__advanced__crypto__overlay__heading {
+  font-size: 35px;
+  font-weight: 600;
+  padding: 0em 0.2em;
+  color: $white;
+  max-width: 600px;
+  text-align: center;
+}
+.most__advanced__crypto__overlay__btn {
+  padding: 0.6em 3em;
+  margin-top: 3em;
+  background-color: $white;
+  border-radius: 50px;
+  border: 1px solid $white;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.most__advanced__crypto__overlay__btn:hover {
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+  transition: 300ms ease-in-out;
+}
+.create__own__your__mail {
+  width: 100%;
+  padding: 5em 0em;
+  background-color: $white;
+}
+.create__own__your__mail__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0em 2em;
+}
+.create__own__your__mail__container__heading {
+  font-size: 35px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+.create__own__your__mail__container__text {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1em;
+  color: #676767;
+}
+.create__own__your__mail__container__automizer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+.create__own__your__mail__container__automizer__left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create__own__your__mail__container__automizer__left__img {
+  width: 100%;
+  min-width: 400px;
+}
+.create__own__your__mail__container__automizer__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3em;
+  cursor: pointer;
+}
+.create__own__your__mail__automizer__right__entry {
+  padding: 2em;
+  background-color: #ecedf2;
+  border-radius: 10px;
+  margin-bottom: 2em;
+}
+.create__own__your__mail__automizer__right__entry:hover {
+  background: linear-gradient(
+    236deg,
+    rgba(225, 73, 130, 1) 38%,
+    rgba(133, 99, 221, 1) 87%
+  );
+}
+.create__own__your__mail__automizer__right__entry:hover * {
+  color: $white;
+}
+.create__own__your__mail__automizer__right__entry:last-child {
+  margin-bottom: 0em;
+}
+.create__own__your__mail__automizer__right__entry__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.create__own__your__mail__automizer__right__entry__text {
+  font-size: 15px;
+  max-width: 500px;
+  color: #676767;
+}
+
+@media (max-width: 1150px) {
+  .homepage__trading__container__right__entry {
+    max-width: 100%;
+  }
+  .homepage__trading__container__right__card__col {
+    width: 100%;
+  }
+  .homepage__trading__container__right__entry {
+    margin: 0.5em 0em;
+  }
+}
+@media (max-width: 950px) {
+  .homepage__trading__container {
+    flex-direction: column;
+  }
+  .homepage__trading__container__left {
+    max-width: 100%;
+    margin-bottom: 5em;
+  }
+  .homepage___wrapper__right {
+    margin-top: 2em;
+  }
+  .homepage__trading__container__left__text {
+    padding-right: 0em;
+  }
+  .homepage__trading__container__right {
+    max-width: 100%;
+  }
+  .create__own__your__mail__container__automizer {
+    flex-direction: column;
+  }
+  .create__own__your__mail__container__automizer__left {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .create__own__your__mail__container__automizer__left__img {
+    max-width: 600px;
+  }
+  .create__own__your__mail__container__automizer__right {
+    width: 100%;
+    padding-left: 0em;
+  }
+}
+@media (max-width: 800px) {
+  .homepage___wrapper__left__heading,
+  .most__advanced__crypto__overlay__heading,
+  .create__own__your__mail__container__heading {
+    font-size: 30px;
+  }
+  .homepage {
+    height: 100%;
+    max-height: 100%;
+  }
+  .homepage___wrapper__left {
+    padding-right: 0em;
+  }
+  .homepage___wrapper__overlay {
+    flex-direction: column;
+  }
+  .homepage___wrapper__left__heading {
+    max-width: 100%;
+  }
+  .homepage img {
+    margin-top: 2em;
+  }
+}
+@media (max-width: 500px) {
+  .homepage___wrapper__left__heading,
+  .most__advanced__crypto__overlay__heading,
+  .create__own__your__mail__container__heading {
+    font-size: 25px;
+  }
+  .create__own__your__mail__automizer__right__entry {
+    padding: 1.5em;
+  }
+  .create__own__your__mail__container__automizer__left__img {
+    min-width: 100%;
+  }
+  .homepage___wrapper {
+    padding: 4em 2em;
+  }
+}
